@@ -23,7 +23,7 @@ def render_result():
     name = '《' + data.name + '》'
     name_sfx = 'です。'
     text_data = name_pfx + name + name_sfx
-    tic = TwitterIntentClient(text=text_data, shere_url='hoge.co.jp', hashtags='あな他の番です,あな番,あな番紙交換ツール')
+    tic = TwitterIntentClient(text=text_data, shere_url='hoge.co.jp', hashtags='あなたの番です,あな番,あな番紙交換ツール')
     summary = data.summary
     return render_template('result.html', name_pfx=name_pfx, name=name, name_sfx=name_sfx, summary=summary, tweet_url=tic.url)
 
