@@ -1,0 +1,427 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+/*
+.cp_iptxt {
+  position: relative;
+  width: 27.33%;
+  margin: 40px 3%;
+  text-align: center
+}
+
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  padding-left: 40px;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.cp_iptxt input[type='text']:focus {
+  outline: none;
+}
+
+.cp_iptxt input[type='text']:focus::after {
+  outline: none;
+}
+
+.cp_iptxt i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 5px;
+  transition: 0.3s;
+  color: #aaaaaa;
+}
+
+.cp_iptxt::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -1px;
+  content: '';
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #da3c41;
+}
+*/
+body {
+  background-image: url("../images/bg.png")
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+}
+
+.cs-inline {
+  display: inline-block;
+}
+
+.btn-flat-simple {
+  font-size: 2em;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00BCD4;
+  background: #ECECEC;
+  transition: .4s;
+}
+
+.btn-flat-simple:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+#social-platforms {
+  position: relative;
+  top: 100px;
+  top: 25vh;
+  font-size: 1rem;
+  text-align: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+
+/*Pen code from this point on*/
+
+.btn {
+  clear: both;
+  white-space: nowrap;
+  font-size: .8em;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 2px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn>span, .btn-icon>i {
+  float: left;
+  padding: 13px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  line-height: 1em
+}
+
+.btn>span {
+  padding: 14px 18px 16px;
+  white-space: nowrap;
+  color: #FFF;
+  background: #b8b8b8
+}
+
+.btn:focus>span {
+  background: #9a9a9a
+}
+
+.btn-icon>i {
+  border-radius: 5px 0 0 5px;
+  position: relative;
+  width: 13px;
+  text-align: center;
+  font-size: 1.25em;
+  color: #fff;
+  background: #212121
+}
+
+.btn-icon>i:after {
+  content: "";
+  border: 8px solid;
+  border-color: transparent transparent transparent #222;
+  position: absolute;
+  top: 13px;
+  right: -15px
+}
+
+.btn-icon:hover>i, .btn-icon:focus>i {
+  color: #FFF
+}
+
+.btn-icon>span {
+  border-radius: 0 5px 5px 0
+}
+
+
+/*Facebook*/
+
+.btn-facebook:hover>i, .btn-facebook:focus>i {
+  color: #3b5998
+}
+
+.btn-facebook>span {
+  background: #3b5998
+}
+
+
+/*Twitter*/
+
+.btn-twitter:hover>i, .btn-twitter:focus>i {
+  color: #55acee
+}
+
+.btn-twitter>span {
+  background: #55acee
+}
+
+
+/*Google*/
+
+.btn-googleplus:hover>i, .btn-googleplus:focus>i {
+  color: #dd4b39
+}
+
+.btn-googleplus>span {
+  background: #dd4b39
+}
+
+
+/*Pinterest*/
+
+.btn-pinterest:hover>i, .btn-pinterest:focus>i {
+  color: #cb2028
+}
+
+.btn-pinterest>span {
+  background: #cb2028
+}
+
+
+/*LinkedIn*/
+
+.btn-linkedin:hover>i, .btn-linkedin:focus>i {
+  color: #007bb6
+}
+
+.btn-linkedin>span {
+  background: #007bb6
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 4.0em;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.cs-text-red {
+  color: red;
+}
+
+.cs-text-darkred {
+  color: #dd4b39;
+}
+
+.btn-square-slant {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  text-decoration: none;
+  background: #668ad8;
+  /*ボタン色*/
+  color: #FFF;
+  /*border-bottom: solid 5px #36528c;*/
+  /*ボタン色より暗めに*/
+  /*border-right: solid 5px #5375bd;*/
+	/*ボタン色より暗めに*/
+	box-shadow: 2px 2px 4px gray;
+	border-radius: 5px;
+
+}
+
+.btn-square-slant:before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+.btn-square-slant:after {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-color: transparent;
+}
+
+.btn-square-slant:active {
+  /*ボタンを押したとき*/
+  border: none;
+  -webkit-transform: translate(6px, 6px);
+  transform: translate(6px, 6px);
+}
+
+.btn-square-slant:active:after, .btn-square-slant:active:before {
+  content: none;
+  /*ボタンを押すと線が消える*/
+}
+
+#back-btn {
+  background: #dd4b39;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.result-name-text {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: dashed 2px #87CEFA;
+  display: inline-block;
+  padding: 1em;
+  font-size: 2em;
+}
+
+#draw-btn {
+  background: #007bb6;
+}
+
+.nice-wrap {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.nice-label {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+.nice-label.focus {
+  top: -25px;
+  left: 5px;
+  font-size: 14px;
+  color: #7abaeb;
+}
+
+.nice-textbox {
+  position: relative;
+  display: block;
+  width: 500px;
+  margin-top: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #a0a0a0;
+	outline: none;
+	background-color: #7abaeb
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 30%;
+	margin: 0px auto;
+	text-align: center;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
+
+.form-container {
+  margin-top: 2em;
+}
+
+.introduction {
+  text-align: center;  
+}
+
+.intro-text {
+  font-size: 2em;
+  color: #ccc9c9;
+  font-weight: bold;
+  border-bottom: solid 3px orange;
+  display: inline-block;
+  line-height: 1.7;
+  padding-bottom: 1.1em;
+  margin-left: 0.5em;
+}
+
+#btn-blog {
+  background-color: #68519e;
+}
+
+.comment-icon {
+  font-size: 2.8em;
+  color: #87CEFA;
+}
+
+.cs-comment-text {
+  margin-right: 2.8em;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+#blog-btn-container {
+  margin-top: 0;
+}

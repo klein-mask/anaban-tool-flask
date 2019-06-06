@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <title>あなたの番です紙交換アプリ</title>
+    <link href='https://unpkg.com/ress/dist/ress.min.css'r el='stylesheet' >
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>あなたの<span class="cs-text-darkred">番</span>です紙交換アプリ</h1>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <!--
+            <div id="social-platforms">
+                <a class="btn btn-icon btn-facebook" href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                <a class="btn btn-icon btn-twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                <a class="btn btn-icon btn-googleplus" href="#"><i class="fa fa-google-plus"></i><span>Google+</span></a>
+                <a class="btn btn-icon btn-pinterest" href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+                <a class="btn btn-icon btn-linkedin" href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+            </div>
+            -->
+            <div id="blog-btn-container" class="btn-container">
+                <a href="https://kleinblog.net/" id="btn-blog" class="btn-square-slant">
+                    <i class="fas fa-external-link-alt"></i>
+                    考察ブログを見る
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>	

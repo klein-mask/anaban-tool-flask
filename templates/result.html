@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% if name %}
+        <div class="text-container">
+            <p class="result-name-text">
+                {{name_pfx}}
+                <span class="cs-text-darkred">{{name}}</span>
+                {{name_sfx}}
+            </p>
+        </div>
+    {% endif %}
+    {% if summary %}
+        <div class="text-container">
+            <i class="far fa-comments comment-icon"></i>
+            <p class="intro-text cs-comment-text">{{summary}}</p>
+        </div>
+    {% endif %}
+    <div class="btn-wrapper">
+        <div class="btn-container cs-inline">
+            <a href={{tweet_url}}  class="btn-square-slant">
+                <i class="fab fa-twitter"></i>
+                Twiiterでシェアする
+            </a>
+        </div>
+        <div class="btn-container cs-inline">
+            <a href="./index.html" id="back-btn" class="btn-square-slant">
+                <i class="far fa-hand-pointer"></i>
+                もう一度引く
+            </a>
+        </div>
+    </div>
+{% endblock %}
