@@ -1,19 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
     <section class="introduction">
-        <h2>
-            日テレ系ドラマ「あなたの番です」のTwitter診断系ジョークアプリです。
-        </h2>
+        <p class="app-intro-text">
+            日テレ系ドラマ「あなたの番です」のTwitter診断系アプリです。
+        </p>
         <p class="intro-text">
-            自分が書きたい名前を入力すると、ランダムで実際にドラマで紙に書かれたいずれかの名前が出ます。<br>
-            （2019/06/01時点で情報が出てるものに対応しております）
+            名前を入力すると、実際にドラマで紙に書かれたいずれかの名前が出ます。<br>
+            （2019/06/01時点で情報が出てるものに対応）
         </p>
     </section>
     <div class="form-container">
         <form id="form1" method="post" action="./result.html">
             <div class="cp_iptxt">
                 <input type="text" name="user_name" placeholder="あなたが書く名前">
-                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                <i class="fas fa-pencil-alt form-fa-size" aria-hidden="true"></i>
             </div>
             <div class="btn-container">
                 <input type="hidden">

@@ -56,7 +56,7 @@ body {
   text-align: center;
   margin-top: 2em;
   margin-bottom: 2em;
-  font-size: 1.4em;
+  font-size: 2.0em;
 }
 
 .cs-inline {
@@ -294,7 +294,7 @@ h2 {
 #back-btn {
   background: #dd4b39;
   margin-left: 3em;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
 .text-container {
@@ -308,7 +308,7 @@ h2 {
   border: dashed 2px #87CEFA;
   display: inline-block;
   padding: 1em;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 #draw-btn {
@@ -353,12 +353,13 @@ h2 {
 
 .cp_iptxt {
 	position: relative;
-	width: 30%;
+  width: 50%;
+	height: 20%;  
 	margin: 0px auto;
 	text-align: center;
 }
 .cp_iptxt input[type=text] {
-	font: 15px/24px sans-serif;
+	font: 30px/39px sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	margin: 8px 0;
@@ -386,6 +387,10 @@ h2 {
 	color: #da3c41;
 }
 
+.form-fa-size {
+  font-size: 2.1em;
+}
+
 .form-container {
   margin-top: 2em;
 }
@@ -395,7 +400,7 @@ h2 {
 }
 
 .intro-text {
-  font-size: 2em;
+  font-size: 1.2em;
   color: #ccc9c9;
   font-weight: bold;
   border-bottom: solid 3px orange;
@@ -414,8 +419,23 @@ h2 {
   color: #87CEFA;
 }
 
+.comment-icon-2 {
+  font-size: 2.8em;
+  color: #87CEFA;
+  /*
+  margin-left: 20%;
+  margin-top: 1.2em;
+  */
+  position: relative;
+  bottom: 1.2em;
+  left: 0.7em;
+
+}
+
 .cs-comment-text {
   margin-right: 2.8em;
+  font-size: 2.2em;
+  color: #FFF;
 }
 
 .btn-wrapper {
@@ -424,4 +444,15 @@ h2 {
 
 #blog-btn-container {
   margin-top: 0;
+}
+
+.title-text {
+  text-align: center;
+  color: #fff;
+  font-size: 2.7em;
+}
+
+.app-intro-text {
+  color: #fff;
+  font-size: 1.5em; 
 }
